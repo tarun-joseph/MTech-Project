@@ -1,0 +1,44 @@
+/*Group 5:
+Objective:
+	1. Classify image using unsupervised classifier (here ISODATA)
+Library to be used:
+			1. GDAL for image operations
+			
+class ClusterImage
+{
+	int spectral_res;//no. of bands
+	double spatial-res;//size of pixel
+	double srs;
+	double extent[4];
+	Image cluster_ID //gdal image object storing cluster id of each pixel
+}
+
+class SatImage
+{	
+	int spectral_res;//no. of bands
+	double spatial-res;//size of pixel
+	double srs;
+	double extent[4];
+	Image Bands //gdal image object
+	
+	SatImage(inputfile)
+	{
+	/* read the input image
+	  calculate and set value to corresponding variables spectral_res, spatial_res, srs, extent */
+	}
+}
+interface Classifier
+{
+	public ClusterImage runClassifier(SatImage image);
+	
+}
+
+class ISODATA implements Classifier
+{
+	int cluster_no;
+	int maxIterations;
+	double threshold;
+	public ClusterImage runClassifier(SatImage image)//implement the runClassifier method from Classifier interface
+	{
+	}
+}

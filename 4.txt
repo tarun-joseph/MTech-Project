@@ -1,0 +1,29 @@
+/*Group 4:
+Objective:
+	1. Georef the image using gcp file
+	2. write the image to a new location 
+Library to be used:
+			1. GDAL for image operations
+			
+Class GeorefSatImage
+{
+	int spectral_res;//no. of bands
+	double spatial-res;//size of pixel
+	double srs;
+	double extent[4];
+	Image Bands //gdal image object
+	
+	GeorefSatImage(inputfile)
+	{
+	/* read the input image
+	  calculate and set value to corresponding variables spectral_res, spatial_res, srs, extent */
+	}
+	public  void georef("gcpFileAddress","EPSG code projection")
+	{
+	//georef the image of this object
+	}
+	public writeImage("FileAddress")
+	{
+	//write image from this object at FileAddress provided
+	}
+}
