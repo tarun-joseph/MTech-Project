@@ -1,0 +1,36 @@
+/*Group 1:
+Objective:
+	1. Display a satellite image (multi and hyperspectral)
+	2. Plot spectral profile at a given location
+	3. Extract band(s) from the given image and store the  spectral subset as new image
+Library to be used:
+			1. GDAL for image operations
+			2. JAI for image display
+			3. JFreeChart for plotting(http://JFreeChart.org) */
+Class SatImage
+{
+	int spectral_res;//no. of bands
+	double spatial-res;//size of pixel
+	double srs;
+	double extent[4];
+	Image Bands //gdal image object
+	public void spectral_Profile(x,y)
+	{
+	//Draw the graph of band vs DN value at given location(x,y)
+	}
+	public displayFCC( int red, int blue, int green)
+	{
+	//red, blue and green are the band nos of the image
+	//display false color composite displaying each band to respective color i.e (red color to band no.'red')
+	}
+	public SatImage extractBands( int band_nos[])
+	{	
+	//Extract the bands as mentioned in band_nos array and retrun the new subset as SatImage object
+	}
+	SatImage(inputfile)
+	{
+	/* read the input image
+	  calculate and set value to corresponding variables spectral_res, spatial_res, srs, extent */
+	}
+
+}

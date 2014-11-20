@@ -1,0 +1,36 @@
+/*Group 2:
+Objective:
+	1. Display a DEM 
+	2. Plot Elevation profile along a given path
+	3. Extract band(s) from the given image and store the  spectral subset as new image
+Library to be used:
+			1. GDAL/OGR for image and vector operations
+			2. JAI for image display
+			3. JFreeChart for plotting(http://JFreeChart.org) */
+Class DEM
+{
+	int spatial-res;//size of pixel
+	double srs;
+	double extent[4];
+	Image slope;// should have DN value as double
+	Image aspect;// should have DN value as double
+	Image elev // // should have DN value as double
+	public void elevation_Profile(Geometry g)
+	{
+	//Draw the graph of elevation  vs locations along the path defined by geometry
+	}
+	public displayDEM()
+	{
+	//display as gray scale
+	//
+	}
+	
+	DEM(inputFile)// constructor of class DEM
+	{
+	*/read the DEM as user input
+	calculate slope aspect 
+	store values in corresponding variables viz. slope, aspect and elev*/
+	
+	}
+
+}

@@ -1,0 +1,11 @@
+Instructions:
+Follow the framework provided while coding.
+
+Class name , method name and signature should exactly match with the given framework.
+
+Your code would be evaluated by calling your class members in another class by creating objects.
+
+Your Submission should include:
+	1. Source Code (.java) with comments
+	2. Executable jar file
+	3. A Report with contribution of each member 

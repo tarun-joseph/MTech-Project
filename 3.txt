@@ -1,0 +1,41 @@
+/*Group 2:
+Objective:
+	1. Extract image Statistics
+	2. Plot Image Histogram 
+	3. Display the image
+Library to be used:
+			1. GDAL/OGR for image and vector operations
+			2. JAI for image display
+			3. JFreeChart for plotting(http://JFreeChart.org) */
+Class Image_Stats
+{
+	int spatial-res;//size of pixel
+	double srs;
+	double extent[4];
+	int no_pixel, no_bands;
+	double mean[],median[],mode[],sd[];
+	Image image;//gdal image object
+	
+	public void historgram(int Bandno)
+	{
+	//Draw the graph of elevation  vs locations along the path defined by geometry
+	}
+	public displayStat()
+	{
+	//display status for all bands
+	//
+	}	
+	public displayFCC(int red, int green, int blue)
+	{
+	//red, blue and green are the band nos of the image
+	//display false color composite displaying each band to respective color e.g (red color to band no.'red') 
+	}
+	Image_Stats(inputFile)// constructor of class DEM
+	{
+	*/read the input image as user input
+	calculate statistics 
+	store values in corresponding variables */
+	
+	}
+
+}
