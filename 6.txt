@@ -1,0 +1,27 @@
+/*Group 6:
+Objective:	1. Rater to vector conversion of the satellite image
+Suggested library : 1.GDAL/OGR for image/vector operations
+		    2. use suitable library to display the shapefile or JAI
+			*/
+class R2V
+{
+	double spatial-res;//size of pixel
+	double srs;//spatial reference system represented by EPSG code
+	double extent[4];
+	Image raster //gdal image object storing cluster id of each pixel
+	R2V(inputFile)
+	{
+		//reads the raster and set corresponding variable values
+	}
+	
+	public .......vectorize("outputshapefile")
+	{
+		//create polygon from the raster and write to output shapefile
+		// return a GDAL/OGR  object having the vector generated from the input raster
+		display(outputshapefile);
+	}
+	public void display ("shapefileaddress")
+	{
+		// display the shapefile 
+	}
+}

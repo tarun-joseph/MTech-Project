@@ -1,0 +1,76 @@
+/*Group 9:
+Objective:
+	1. ReClassify the raster from unsupervised classification by taking input from interpreter.
+Library to be used:
+			1. GDAL for image operations
+			*/
+class ClusterImage
+{
+	double spatial-res;//size of pixel
+	double srs;//spatial reference system represented by EPSG code
+	double extent[4];
+	Image cluster_ID //gdal image object storing cluster id of each pixel
+	ClusterImage(inputFile)
+	{
+		//reads the raster generated from unsuprvised classification
+		//set corresponding variable values
+	}
+}
+
+class SatImage
+{	
+	int spectral_res;//no. of bands
+	double spatial-res;//size of pixel
+	double srs;
+	double extent[4];
+	Image Bands //gdal image object
+	
+	SatImage(inputfile)
+	{
+	/* read the input image
+	  calculate and set value to corresponding variables spectral_res, spatial_res, srs, extent */
+	}
+}
+
+
+class ImageInterpretation
+{	
+	double spatial_res;//size of pixel
+	double srs;//spatial reference system represented by EPSG code
+	double extent[4];
+	int cluster_no;// no of clusters present in ClusterImage
+	double Avg_DN[];// for each cluster calculate its avg DN value (array size would be equal to cluster_no)
+	int class_ID[];// assigned class ID for each cluster by the interpreter
+	ImageInterpretation(ClusterImage clus)
+	{
+		//set srs, extend, spatial_res and cluster_no variable by reading trhe ClusterImage instatnce 'clus'
+	}
+	public void ComputeAvg_DN(ClusterImage clus,SatImage image)
+	{
+		// calculater the avg DN value for each cluster and store in Avg_DN array.
+	
+	}
+	public ClusterImage reclassify(ClusterImage clus)
+	{
+		for(int ID:clus.cluster_ID)
+		{
+			showAvg_DN(ID);//it would display the avg DN value for the cluster Id
+			class_ID[ID]=getClassID(ID);// user will enter the class ID for this cluster and that would be get stored
+		}
+		
+		//update the cluster_ID values with corresponding 'class_ID' and return as new clusterImage object
+	}
+
+	
+	public void showAvg_DN(ID)
+	{
+	//it should display the avg DN value for the cluster Id
+	}
+
+	public double getClassID(double)
+	{
+	// Ask user to enter the classId 
+	// return the entered value as double
+	}
+}
+
