@@ -1,0 +1,42 @@
+/*Group 10:
+Objective:
+	1. Calculate the image ratios and display as image
+Library to be used:
+			1. GDAL for image operations
+			2. JAI to Display SatImage, NDVI, NDSI etc.
+			
+class SatImage
+{	
+	int spectral_res;//no. of bands
+	double spatial-res;//size of pixel
+	double srs;// spatial reference system
+	double extent[4];
+	Image Bands //gdal image object
+	
+	SatImage(inputfile)
+	{
+	/* read the input image and set coresponding varible of the class accordingly*/
+	
+	}
+
+}
+Class ImageRatio
+{
+	SatImage image;
+	ImageRatio(SatImage im)
+	{
+		image=im;		
+	}
+	ImageRatio(String imagefileAdd)
+	{
+		image= SatImage(imagefileAdd)
+	}
+	public SatImage getNDVI()
+	{
+		//method to calculate NDVI. Also display and return NDVI image 
+	}
+	similarly do for other band ratios
+}
+
+
+

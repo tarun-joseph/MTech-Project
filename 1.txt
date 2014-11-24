@@ -6,7 +6,7 @@ Objective:
 Library to be used:
 			1. GDAL for image operations
 			2. JAI for image display
-			3. JFreeChart for plotting(http://JFreeChart.org) */
+			3. JFreeChart for plotting(http://JFree.org) */
 Class SatImage
 {
 	int spectral_res;//no. of bands

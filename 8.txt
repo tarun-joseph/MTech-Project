@@ -1,0 +1,45 @@
+/*Group 8:
+Objective:
+	1. Apply various image filters and display the output images
+Library to be used:
+			1. GDAL for image operations
+			2. JAI to Display image
+			3. Any other appropriate library
+			
+class SatImage
+{	
+	int spectral_res;//no. of bands
+	double spatial-res;//size of pixel
+	double srs;// spatial reference system
+	double extent[4];
+	Image Bands //gdal image object
+	
+	SatImage(inputfile)
+	{
+	/* read the input image and set coresponding varible of the class accordingly*/
+	
+	}
+
+}
+Class ImageFilter
+{
+	SatImage image;
+	ImageFilter(SatImage im)
+	{
+		image=im;		
+	}
+	ImageFilter(String imagefileAdd)
+	{
+		image= SatImage(imagefileAdd)
+	}
+	public SatImage edgeFilter(int band_no)
+	{
+		//method to apply edge filter to the particulr of image. Also display and return the  output. 
+	}
+	
+	
+	similarly do for other image filters
+}
+
+
+

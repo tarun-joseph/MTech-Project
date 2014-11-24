@@ -1,0 +1,33 @@
+/*Group 7:
+Objective:
+	1. Calculate the image transformation (3D) matrix (rotation, scaling, translation)
+Library to be used:
+			1.use appropriate library
+			*/
+ 
+
+class Transform
+{	
+	double source[];
+	double target[];
+	double Rotation[]
+	double Scale[]
+	double Translation[]
+	
+	public getSource(String fileAdd)
+	{
+		//get the source 3d cooridnates to varible source
+		
+	}
+	public getTarget(String fileAdd)
+	{
+		//get the target 3d cooridnates to variable target
+	}
+	
+	public void getTransParameter(double[] src,double[] tar)
+	{
+		//function to calculate Rotation, Scale and Translation parameters and set corresponding variable
+	}
+	
+}
+
