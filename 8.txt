@@ -30,11 +30,11 @@ Class ImageFilter
 	}
 	ImageFilter(String imagefileAdd)
 	{
-		image= SatImage(imagefileAdd)
+		image= SatImage(imagefileAdd);
 	}
 	public SatImage edgeFilter(int band_no)
 	{
-		//method to apply edge filter to the particulr of image. Also display and return the  output. 
+		//method to apply edge filter to the particulr band of the  image. Also display and return the  output. 
 	}
 	
 	

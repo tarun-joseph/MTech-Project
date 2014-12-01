@@ -2,11 +2,11 @@
 Objective:
 	1. Display a DEM 
 	2. Plot Elevation profile along a given path
-	3. Extract band(s) from the given image and store the  spectral subset as new image
+
 Library to be used:
 			1. GDAL/OGR for image and vector operations
 			2. JAI for image display
-			3. JFreeChart for plotting(http://JFreeChart.org) */
+			3. JFreeChart for plotting(http://JFree.org) */
 Class DEM
 {
 	int spatial-res;//size of pixel
